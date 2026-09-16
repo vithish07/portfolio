@@ -1,75 +1,379 @@
-<!DOCTYPE html>
+
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vithish | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1 class="logo">My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- About Me Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hi, I'm [Your Name], a passionate web developer with experience in HTML, CSS, JavaScript, and React. I love building responsive websites and solving complex problems!</p>
-    </div>
-  </section>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>A brief description of the project.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>A brief description of the project.</p>
-        <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="#" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <button id="menu-btn">☰</button>
+        </nav>
+    </header>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
 
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+        <div class="hero-content">
+            <p class="small-text">Hello, I'm</p>
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 My Portfolio | All rights reserved.</p>
-    </div>
-  </footer>
+            <h1>kavindass</h1>
+
+            <h2>Computer Science Student</h2>
+
+            <p>
+                I'm passionate about Web Development, Cybersecurity
+                and building useful technology solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="profile-circle">
+              <img src="" alt="my photo">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                👨‍💻
+            </div>
+
+            <div class="about-text">
+
+                <h3>Computer Science Student</h3>
+
+                <p>
+                    I'm a Computer Science student interested in
+                    Full Stack Development, Cybersecurity and
+                    innovative technology.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and developing
+                    real-world projects that solve practical problems.
+                </p>
+
+                <div class="about-info">
+                    <p><strong>Name:</strong> kavindass</p>
+                    <p><strong>Degree:</strong> B.E CSE</p>
+                    <p><strong>Location:</strong> Attur ,Tamil Nadu</p>
+                    <p><strong>Interest:</strong> Web Development & Cybersecurity</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills-section">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <span style="width: 90%"></span>
+                </div>
+                <p>90%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <span style="width: 85%"></span>
+                </div>
+                <p>85%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <span style="width: 75%"></span>
+                </div>
+                <p>75%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <div class="progress">
+                    <span style="width: 80%"></span>
+                </div>
+                <p>80%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <div class="progress">
+                    <span style="width: 70%"></span>
+                </div>
+                <p>70%</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="progress">
+                    <span style="width: 70%"></span>
+                </div>
+                <p>70%</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <div class="project-icon">🌱</div>
+
+                <h3>
+                    AI-Driven IoT System for Plant Stress Detection
+                </h3>
+
+                <p>
+                    An intelligent IoT-based system designed to detect
+                    plant stress and provide adaptive irrigation based
+                    on plant requirements.
+                </p>
+
+                <div class="project-tech">
+                    <span>AI</span>
+                    <span>IoT</span>
+                    <span>Python</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project →</a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card">
+
+                <div class="project-icon">🔐</div>
+
+                <h3>
+                    Secure File Sharing System
+                </h3>
+
+                <p>
+                    A secure file sharing application designed to
+                    protect files using authentication, encryption
+                    and secure access mechanisms.
+                </p>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Security</span>
+                    <span>Web</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project →</a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <div class="project-icon">📡</div>
+
+                <h3>
+                    WiFi Analysis Application
+                </h3>
+
+                <p>
+                    A project focused on analysing WiFi networks,
+                    network information and basic security-related
+                    parameters.
+                </p>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Networking</span>
+                    <span>Security</span>
+                </div>
+
+                <a href="#" class="project-btn">View Project →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section education-section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <div class="education-icon">🎓</div>
+
+            <div>
+                <h3>B.E - Computer Science and Engineering</h3>
+
+                <h4>
+                    <a href="https://tagoreiet.ac.in"> Tagore Institute of Engineering and Technology</a>
+                </h4>
+
+                <p>
+                    Tamil Nadu, India
+                </p>
+
+                <span>Currently Pursuing</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Let's Connect!</h3>
+
+                <p>
+                    I'm open to internships, projects and
+                    learning opportunities.
+                </p>
+
+                <div class="contact-item">
+                    📧
+                    <span>vithishraja6@gmail.com</span>
+                </div>
+
+                <div class="contact-item">
+                    📱
+                    <span>+918072497346</span>
+                </div>
+
+                <div class="contact-item">
+                    📍
+                    <span>Tamil Nadu, India</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/kavindass">Github</a>
+                    <a href="https://www.linkedin.com/in/kavindass">Linkedin</a>
+                    <a href="https://www.instagram.com/_itz_kavin_03_?stkn=MWxoMmNudXFvZWUzcA==">Instagram</a>
+                </div>
+
+            </div>
+            
+      <div class="contact-form">
+            <form action=""
+            method="POST">
+
+                <label>Name</label>
+                <input
+                    type="text" 
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <label>Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <label>Message</label>
+                <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" >
+                    Send Message
+                </button>
+
+            </form> </div>
+
+          
+        </div>
+
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+
+        <p>
+            © 2026 vithish. All Rights Reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript ❤️
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
